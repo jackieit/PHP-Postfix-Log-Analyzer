@@ -54,12 +54,6 @@ while(!$hdLog->eof()){
 		$pos_end = strpos($content,'>',$pos);
 		$msgId     = substr($content,$pos,($pos_end-$pos));
 		//只找批量发送队列中的邮件
-		if(strpos($msgId,'vip.vlongbiz.com')!==false){
-			$hdLog->next();
-			//$readLines++;
-			continue;			
-		}
- 
 		$curLine = $hdLog->key();
  
 		$nextPos = $curLine+1;
