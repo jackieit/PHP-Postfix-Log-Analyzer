@@ -1,6 +1,11 @@
 <?php
+/**
+ * PHP Postfix log analyzer main file
+ *
+ * @package default
+ * @author  jackie
+ **/
 define('ROOT',dirname(__FILE__).DIRECTORY_SEPARATOR);
-
 //日志文件路径
 $logFile  = ROOT.'maillog';
 //记忆上次读取日志文件的位置
